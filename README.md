@@ -20,17 +20,13 @@ We model heading and position in discrete time:
 
 - Heading update (directional persistence)
   
-  $$
-  \theta_{t+1} = \theta_t + \Delta_t,\qquad \Delta_t \sim \mathrm{vonMises}(\mu=0,\kappa)
-  $$
+  $$\theta_{t+1} = \theta_t + \Delta_t,\qquad \Delta_t \sim \mathrm{vonMises}(\mu=0,\kappa)$$
 
   where $\kappa \ge 0$ is the concentration parameter. Larger $\kappa$ means smaller random turns and straighter motion.
 
 - Position update (constant step length $s$)
   
-  $$
-  \mathbf{x}_{t+1} = \mathbf{x}_t + s \begin{bmatrix}\cos\theta_{t+1}\\ \sin\theta_{t+1}\end{bmatrix}
-  $$
+  $$\mathbf{x}_{t+1} = \mathbf{x}_t + s \begin{bmatrix}\cos\theta_{t+1}\\ \sin\theta_{t+1}\end{bmatrix}$$
 
   where $s > 0$ is the fixed step length.
 
