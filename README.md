@@ -26,7 +26,13 @@ We model heading and position in discrete time:
 
 - Position update (constant step length $s$)
   
-  $$\mathbf{x}_{t+1} = \mathbf{x}_t + s \begin{bmatrix}\cos\theta_{t+1} \\\\ \sin\theta_{t+1}\end{bmatrix}$$
+  $$
+  \mathbf{x}_{t+1} = \mathbf{x}_{t} + s
+  \begin{bmatrix}
+  \cos\theta_{t+1} \\
+  \sin\theta_{t+1}
+  \end{bmatrix}
+  $$
 
   where $s > 0$ is the fixed step length.
 
